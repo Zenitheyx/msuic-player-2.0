@@ -1,0 +1,7 @@
+term.clear(); term.setCursorPos(1,1)
+print("NEXUS RECOVERY")
+print("The normal system failed to start.")
+print("Available: ls, edit, delete/restore system files, reboot")
+print("Type 'shell' to enter the normal CraftOS shell.")
+print("Type 'reboot' when repaired.")
+shell.run("shell")
