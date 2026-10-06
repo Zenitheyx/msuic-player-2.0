@@ -1,0 +1,1 @@
+NEXUS.refreshDevices(); local out=peripheral.find("monitor") or term.current(); term.redirect(out); term.clear(); term.setCursorPos(1,1); print("NEXUS DEVICE MANAGER"); print("NAME                         TYPE"); for n,d in pairs(NEXUS.devices) do print(string.format("%-28s %s",n,d.kind)) end; print(); print("Press any key to return."); os.pullEvent()

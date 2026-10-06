@@ -1,0 +1,1 @@
+term.clear(); term.setCursorPos(1,1); print("NEXUS RECOVERY 0.4.0"); print("The normal desktop could not start."); print("Commands: reboot, shutdown, ls, edit, delete (use carefully)."); while true do write("recovery$ "); local l=read(); if l=="reboot" then os.reboot() elseif l=="shutdown" then os.shutdown() elseif l~="" then pcall(function() shell.run(l) end) end end
